@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/developmentDialogImageView"
+            android:layout_width="375dp"
+            android:layout_height="666dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492"
+            app:srcCompat="@drawable/___2_" />
+
+        <TextView
+            android:id="@+id/developmentDialogTextView"
+            android:layout_width="266dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="33dp"
+            android:text="Данная функция находится в разработке."
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="@+id/developmentDialogImageView"
+            app:layout_constraintEnd_toEndOf="@+id/developmentDialogImageView"
+            app:layout_constraintStart_toStartOf="@+id/developmentDialogImageView"
+            app:layout_constraintTop_toTopOf="@+id/developmentDialogImageView"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/continiueButtonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="270dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Продолжить"
+            android:textColor="#009688"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/developmentDialogImageView"
+            app:layout_constraintEnd_toEndOf="@+id/developmentDialogImageView"
+            app:layout_constraintTop_toBottomOf="@+id/developmentDialogTextView"
+            tools:ignore="DuplicateIds,MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
